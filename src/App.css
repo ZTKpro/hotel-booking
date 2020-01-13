@@ -1,38 +1,327 @@
-.App {
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.App{
+  font-family: 'Gelasio', serif;
+  background-color: #eee;
+}
+.app-resTittle{
+  margin-top: 60px;
+  text-align: center;
+  font-size: 35px;
+}
+.app-MakeRes{
+  margin-top: 40px;
+  text-align: center;
+  font-size: 25px;
+}
+.app-data{
+  margin: 0px auto;
+  margin-top: 40px;
+  height:180px ;
+  width: 70%;
+  box-shadow: 0px 7px 20px grey ;
+  display: flex;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.data-item{
+  height: 100%;
+  width: 300px;
+  padding: 30px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.568);
+}
+.app-check{
+  height: 100%;
+  width: 300px;
+  padding: 30px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.568);
+  background-color: #DAE2E4;
+}
+.check-text{
+  color: #6eb2dd;
+}
+.check-btn{
+  margin-top: 40px;
+  height: 50px;
+  width:200px;
+  color: white;
+  background-color: #849f16;
+  border-radius: 3px;
+}
+.app-roomsTittle{
+  margin-top: 60px;
+  text-align: center;
+ font-size: 30px;
+}
+
+
+
+
+.app-box{
+  margin: 0px auto;
+  margin-top: 50px;
+  height: 100%;
+  width: 70%;
+}
+.box-item{ 
+  margin-top: 25px;
+  height: 200px;
+  width: 100%;
+  display: flex;
+}
+.item-img{
+  height: 100%;
+  width: auto;
+}
+.item-box{
+  height: 100%;
+  width: 100%;
+  border: 1px solid #DCDCDC;
+  padding: 20px;
+  display: flex;
+}
+.item-boxText{
+  width: 56%;
+}
+.box-flex{
+  display: flex;
+}
+.item-name{
+  font-size: 25px;
+}
+.item-ranking{
+  display: flex;
+  height: 25px;
+  justify-content: left;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.item-star{
+  color: rgb(160, 160, 160);
+  margin-right: 5px;
+}
+.ranking-text{
+  color: rgb(95, 95, 95);
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.item-p{
+  margin-top: 3px;
+  color: rgb(95, 95, 95);
+}
+.item-p > span{
+  margin-left: 3px;
+  font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.item-checkbox{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  font-size: 20px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  height: 25px;
+  margin-top: 10px;
+}
+.item-checkbox > p{
+  margin-right: 4px;
+  font-size: 18px;
+}
+.item-checkbox > input{
+  margin-right: 8px;
+}
+.item-checkbox--red{
+  color: red;
+  font-size: 28px;
+}
+
+
+.item-option{
+  height: 100px;
+  width: 45%;
+}
+
+.item-selectBox{
+  margin-top: 20px;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left:40px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.item-selectBox > p{
+  opacity: .7;
+}
+.selectBox-input{
+  width: 40px;
+  height: 40px;
+  border: 0px;
+  margin-left: 10px;
+  text-align: center;
+  font-size: 20px;
+  outline: none;
+  border-bottom: 2px solid rgb(136, 136, 136);
+}
+.selectBox-btn{
+  margin-left: 20px;
+  height:50px;
+  width: 140px;
+  border-radius: 5px;
+  background-color: #849f16;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.booking-date{
+  margin-top:20px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 20px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.booking-date > p{
+  opacity: .6;
+  margin-left: 30px;
 }
+.booking-date > p > span {
+  opacity: 1;
+}
+.booking-box{
+  margin-top: 40px;
+  height: 100%;
+  padding: 10px 50px;
+  box-shadow: 0px 5px 10px rgba(136, 136, 136, 0.596);
+  margin-bottom: 50px;
+}
+.booking-item{
+  margin-top: 20px;
+  height: 130px;
+  display: flex;
+}
+.item-inboxText--booking{
+  display:flex;
+}
+.item-name--booking{
+  margin-right: 15px;
+}
+.item-ranking--booking{
+  margin: 0px;
+  margin-top: 10px ;
+}
+.booking-grid{
+  margin-top: 10px;
+  display: grid;
+  width: 90%;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  font-size: 15px;
+}
+.app-coupon{
+  margin-top: 20px;
+  height: 80px;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+.coupon-textBox{
+  display: flex;
+  width: 450px;
+  justify-content: space-between;
+  align-items: center;
+}
+.coupon-textBox  > input{
+  height: 50px;
+  width: 170px;
+  border: 0px;
+  padding: 20px;
+  font-weight: bold;
+  font-size: 16px;
+  opacity: .7;
+  outline: none;
+  text-align: center;
+}
+.coupon-btn{
+  height: 50px;
+  width: 150px;
+  border-radius: 3px;
+  background-color: rgb(189, 189, 189);
+  font-weight: bold;
+  font-size: 13px;
+  color: white;
+}
+.coupon-cost{
+  width: 150px;
+  display:flex;
+  font-size: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.coupon-price{
+  color: red;
+  font-size: 28px;
+} 
+.app-confirmBox{
+  margin-top: 40px;
+  box-shadow: 0px 5px 10px rgba(136, 136, 136, 0.596);
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.confirmBox-grid{
+  background-color: white;
+  height:70px ;
+  width:81%;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 50% 50%;
+  row-gap: 20px;
+}
+.confirmBox-grid > input{
+  border: 0px;
+  border-bottom: 1px solid rgb(160, 160, 160);
+  width: 90%;
+  text-align: center;
+  outline: none;
+}
+.confirmBox-notes{
+  margin-top: 20px;
+  margin-bottom: 30px;
+  border: 0px;
+  border-bottom: 1px solid rgb(160, 160, 160);
+  height: 100px;
+  width: 80%;
+  padding: 10px;
+  outline: none;
+}
+.confirmBox-option{
+  margin-top: 10px;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  width: 130px;
+}
+.app-confirm{
+  margin-top: 50px;
+  height: 50px;
+  width: 180px;
+  background-color: #849f15;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+}
+.btn {display:flex;justify-content: center;align-items: center;cursor: pointer;}
+.checked {color: orange;}
+.available {color: #BDDC62;}
+.unactive{opacity: .5;}
