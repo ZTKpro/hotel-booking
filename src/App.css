@@ -5,7 +5,7 @@
 }
 
 .App{
-  font-family: 'Gelasio', serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #eee;
 }
 .app-resTittle{
@@ -34,6 +34,36 @@
   font-weight: bold;
   color: rgba(0, 0, 0, 0.568);
 }
+.data-item > span{
+  font-size:20px ;
+}
+.data-select {
+  margin-left: 10px;
+  height: 100%;
+  width: 20%;
+  -webkit-appearance: none;
+  outline: none;
+  font-size: 60px;
+  border: 5px solid rgba(128, 128, 128, 0);
+}
+.data-select > option{
+  max-height: 25px;
+  font-size: 25px;
+}
+.data-select--month{
+  -webkit-appearance: none;
+  outline: none;
+  border: 5px solid rgba(128, 128, 128, 0);
+  font-size: 20px;
+}
+.data-person{
+  height: 100%;
+  border: 0px;
+  outline: none;
+  font-size: 60px;
+}
+
+
 .app-check{
   height: 100%;
   width: 300px;
@@ -99,7 +129,7 @@
   height: 25px;
   justify-content: left;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .item-star{
   color: rgb(160, 160, 160);
@@ -223,12 +253,18 @@
   grid-template-rows: 50% 50%;
   font-size: 15px;
 }
+.booking-price{
+  margin-top: 30px;
+  margin-left: 200px;
+  width: 100px;
+}
 .app-coupon{
   margin-top: 20px;
   height: 80px;
   display: flex;
   text-align: center;
   justify-content: space-between;
+  padding-right: 60px;
 }
 .coupon-textBox{
   display: flex;
@@ -266,6 +302,7 @@
 .coupon-price{
   color: red;
   font-size: 28px;
+  
 } 
 .app-confirmBox{
   margin-top: 40px;
@@ -282,16 +319,22 @@
   height:70px ;
   width:81%;
   display: grid;
-  grid-template-columns: 33% 33% 33%;
+  grid-template-columns: 50% 50%;
   grid-template-rows: 50% 50%;
   row-gap: 20px;
 }
 .confirmBox-grid > input{
   border: 0px;
   border-bottom: 1px solid rgb(160, 160, 160);
-  width: 90%;
+  width: 95%;
   text-align: center;
   outline: none;
+  font-weight: bold;
+  margin-left: 5px;
+}
+.confirmBox-grid>input::placeholder{
+  color: rgba(0, 0, 0, 0.39);
+
 }
 .confirmBox-notes{
   margin-top: 20px;
@@ -321,6 +364,7 @@
   color: white;
   font-weight: bold;
 }
+.price{color: red;font-size: 25px;}
 .btn {display:flex;justify-content: center;align-items: center;cursor: pointer;}
 .checked {color: orange;}
 .available {color: #BDDC62;}
