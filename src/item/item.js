@@ -5,22 +5,26 @@ import './item.css';
 import api from '../api/room.json'
 
 function checkOption(e){
-  alert(e.target.parentElement.style.opacity)
+
   if (e.target.parentElement.style.opacity == ''){
     e.target.parentElement.style.opacity = '1'
   }else{
     e.target.parentElement.style.opacity = ''
   }
+
 }
 
 let commId = 0;
 
 const open = (e) =>{
+
   const urlRoom = document.getElementById('imgRoom')
   const nameRoom = document.getElementById('tittleRoom')
   const descRoom = document.getElementById('descRoom')
   const commRoom = document.getElementById('comRoom')
+
   for(let i = 0; i < api.length;i++){
+
     if(e.target.textContent == api[i].name){
       commId = i;
       urlRoom.src = api[i].url;
@@ -38,6 +42,7 @@ const open = (e) =>{
             )
             commRoom.innerHTML = genComm.join('')
           }
+
         }
         let openItem = document.getElementsByClassName(e.target.id)
         openItem[0].style.display = 'block'
@@ -49,16 +54,57 @@ const close = (e) =>{
 }
 
 const selectItem = (e) =>{
-  if (e.target.parentElement.classList == 'selectBox-btn btn' || e.target.classList == 'selectBox-btn btn') {
-      if (e.target.classList == 'btn-text') {
-        e.target.parentElement.classList.add('selectBox-active')
-      }else{
-        e.target.classList.add('selectBox-active')
-      }
-  }else{
-    e.target.parentElement.classList.remove('selectBox-active')
-    e.target.classList.remove('selectBox-active')
+  
+  const selectedId = []
+  const selBox = document.getElementById('selectedBox')
+  const selBtn = document.querySelectorAll('.selectBox-active')
+  const couPrice = document.getElementsByClassName('coupon-price')
+
+  for(let i = 0;i < selBtn.length;i++){
+    selBtn[i].classList.remove('selectBox-active')
   }
+
+  if (e.target.classList == 'btn-text') {
+    e.target.parentElement.classList.add('selectBox-active')
+  }else{
+    e.target.classList.add('selectBox-active')
+  }
+
+  selectedId.push(e.target.id)
+
+   const genSelected = selectedId.map((itemId) => {
+    return `<div class="booking-item">
+    <img class="item-img" src=${api[itemId].url} alt="room"></img>
+    <div class="item-box">
+    
+    <div class="item-boxText">
+    <div class="item-inboxText--booking">
+    <h3 class="item-name item-name--booking">${api[itemId].name} </h3>
+    <div class="item-ranking item-ranking--booking">
+    <span class="item-star fa fa-star checked"></span>
+    <span class="item-star fa fa-star checked"></span>
+    <span class="item-star fa fa-star checked"></span>
+    <span class="item-star fa fa-star checked"></span>
+    <span class="item-star fa fa-star checked"></span>
+    <p class="ranking-text"> 3 Recenzje </p>
+    </div>
+    </div>
+    
+    <div class="booking-grid">  
+    <p class="item-p">Status:<span class="available">${api[itemId].status}</span></p>
+    <p class="item-p">Zaliczka:<span>${api[itemId].deposit}</span></p>
+    <p class="item-p">Łózka:<span>${api[itemId].beds}</span></p>
+    <p class="item-p">Miejsca:<span>${api[itemId].passanger}</span></p>
+    </div>
+    </div>
+    <div class="booking-price"><p>Cena:</p><p class="price">$${api[itemId].price}</p></div>
+    
+    </div>
+    </div>`
+  })
+
+  selBox.innerHTML = genSelected
+  couPrice[0].innerHTML = '$' + api[selectedId[0]].price
 }
 
 
@@ -91,7 +137,7 @@ const genRoom =  api.map((room) =>
                 </div>
               <div className="item-selectBox">
                 <p>Pokoje</p><input className="selectBox-input" type="number" min="1" max="6" placeholder="1"></input>
-                <div id={room.id}  onClick={selectItem} className="selectBox-btn btn"> <p className="btn-text">WYBIERZ</p> </div>
+                <div id={room.id}  onClick={selectItem} className="selectBox-btn btn"> <p id={room.id} className="btn-text">WYBIERZ</p> </div>
               </div> 
             </div>
           </div>

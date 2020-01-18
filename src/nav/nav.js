@@ -1,10 +1,10 @@
+/* eslint-disable eqeqeq */
 import React,{Component} from 'react';
 import './nav.css';
 
 import account from './img/account.png'
 import logo from './img/logo.png'
 import apiUser from '../api/user.json'
-
 
 let checkLogin = false;
 let name = null;
@@ -26,12 +26,19 @@ const collapse = () => {
 }
 
 const signIn = () => {
+ 
+    const confimBox = document.querySelector('.confirmBox-grid')
+    const confimNotes = document.querySelector('.confirmBox-notes')
+    
     for (let i = 0; i < apiUser.length; i++) {
         if (apiUser[i].email.trim() == document.getElementById('email').value.trim() && apiUser[i].password.trim() == document.getElementById('password').value.trim()) {
             checkLogin = true;
             collapse()
             document.getElementById('signIn').style.display = "none"
             document.getElementById('nick').textContent = apiUser[i].name
+            confimBox.style.display = 'none'
+            confimNotes.style.display = 'none'
+            
         }else{
             document.getElementById('email').style.borderBottom = "1px solid red"
             document.getElementById('email').style.color = "red"

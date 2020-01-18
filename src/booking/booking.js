@@ -7,10 +7,12 @@ class booking extends Component{
      return(
                 <div className="booking-box">
             <div className="app-booking">
-     <div className="booking-date"><p>Data przyjazdu:</p><span>{this.props.dataIn}</span><p>Data odjazdu:</p><span>{this.props.dataOut}</span></div>
+     <div className="booking-date"><p>Data przyjazdu:</p><span id='dataIn'></span><p>Data odjazdu:</p><span id="dataOut"></span></div>
             </div>
+          <div id="selectedBox">
 
-          <div className="booking-item">
+          </div>
+          {/* <div className="booking-item">
             <img className="item-img" src="https://q-cf.bstatic.com/images/hotel/max1024x768/731/73118462.jpg" alt="room"></img>
               <div className="item-box">
                  
@@ -37,7 +39,7 @@ class booking extends Component{
                   <div className="booking-price"><p>Cena:</p><p className="price">$200</p></div>
 
             </div>
-          </div>
+          </div> */}
 
 
             <div className="app-coupon">
@@ -48,7 +50,7 @@ class booking extends Component{
               </div>
               <div className="coupon-cost">
                 <p>Cena:  </p>
-                <p  className="coupon-price">$800</p>
+                <p  className="coupon-price">$0</p>
               </div>
             </div>
           </div>

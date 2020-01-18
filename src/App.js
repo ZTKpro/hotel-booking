@@ -13,10 +13,6 @@ import Confirmbox from './confirmbox/confirmbox.js'
 
 
 class App extends Component {
-  state = {
-    dataIn:'11/12/2020',
-    dataOut:'17/12/2020'
-  }
   
   render() {
     return ( 
@@ -30,7 +26,7 @@ class App extends Component {
             <div className="app-box">
             <Item />
             <h3 className="app-roomsTittle">Twoj Hotele</h3>
-              <Booking dataIn={this.state.dataIn} dataOut={this.state.dataOut} />   
+              <Booking />   
             <p className="app-roomsTittle">Potwierdz Rezewacje</p>
             <Confirmbox/>
           </div>
