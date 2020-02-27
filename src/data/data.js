@@ -62,7 +62,7 @@ class data extends Component{
   
   render() {
     return(
-          <div className="app-data">
+          <div className="app-data g-container">
           <div className="data-item">
             <p>ZAMEDLOWANIE</p>
             <select id="dayIn" className="data-select" name="check-in">

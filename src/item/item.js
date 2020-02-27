@@ -111,7 +111,7 @@ const selectItem = (e) =>{
 
 const genRoom =  api.map((room) =>
 
-  <div key={room.url} id={room.id} className="box-item">
+  <div key={room.url} id={room.id} className="box-item g-container">
     <img className="item-img" src={room.url} alt="room"></img>
       <div className="item-box">
               <div className="item-boxText">  

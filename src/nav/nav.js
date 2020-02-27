@@ -4,6 +4,7 @@ import './nav.css';
 
 import account from './img/account.png'
 import logo from './img/logo.png'
+import logoCompany from './img/logoCompany.png'
 import apiUser from '../api/user.json'
 
 let checkLogin = false;
@@ -63,9 +64,8 @@ class Nav extends Component {
     return(
         <nav>
             <div className="nav">
-                <div className="nav-logo">
-                   <h2> Hotels </h2>
-                </div>
+                <img src={logoCompany} alt="logo" className="nav-logo">
+                </img>
                 <div onClick={collapse}  className="nav-signIn btn">
                     <p>ZALOGUJ SIĘ</p>
                 </div>

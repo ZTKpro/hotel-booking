@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './App.css';
 
 import Navi from './nav/nav.js'
 import Footer from './footer/footer.js'
@@ -8,7 +7,7 @@ import Item from './item/item.js'
 import Booking from './booking/booking.js'
 import Confirmbox from './confirmbox/confirmbox.js'
 
-
+import './App.css';
 
 
 

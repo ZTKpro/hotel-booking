@@ -30,7 +30,7 @@ class comfirmbox extends Component{
     render() { 
      return(
         <div>
-            <div  className="app-confirmBox">
+            <div  className="app-confirmBox g-container ">
                     <div className="confirmBox-grid">                 
                         <input id='nameInput' type="text" placeholder="Imie"></input>
                         <input id='lastnameInput' type="text" placeholder="Nazwisko"></input>

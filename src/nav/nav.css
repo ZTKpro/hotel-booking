@@ -17,6 +17,7 @@
 .nav-logo{
     color: #16cae6;
     cursor: pointer;
+    margin-left: 40px;
 }
 .nav-signInBox{
     display: none;
