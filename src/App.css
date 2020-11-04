@@ -1,75 +1,87 @@
-*{
+* {
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
 }
 
-.App{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.App {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: #eee;
 }
-.app-resTittle{
+.app-resTittle {
   margin-top: 60px;
   text-align: center;
   font-size: 35px;
 }
-.app-MakeRes{
+.app-MakeRes {
   margin-top: 40px;
   text-align: center;
   font-size: 25px;
 }
 
-
-.app-check{
+.app-check {
   height: 100%;
   width: 50%;
   padding: 30px;
   font-weight: bold;
   color: rgba(0, 0, 0, 0.568);
-  background-color: #DAE2E4;
+  background-color: #dae2e4;
 }
-.check-text{
+.check-text {
   color: #6eb2dd;
 }
-.check-btn{
+.check-btn {
   margin-top: 40px;
   height: 50px;
-  width:200px;
+  width: 200px;
   color: white;
   background-color: #849f16;
   border-radius: 3px;
 }
-.app-roomsTittle{
+.app-roomsTittle {
   margin-top: 60px;
   text-align: center;
- font-size: 30px;
+  font-size: 30px;
 }
 
-
-.g-container{
+.g-container {
   max-width: 1200px;
 }
 
-.app-box{
+.app-box {
   margin: 0px auto;
   margin-top: 50px;
   height: 100%;
   width: 70%;
 }
 
-.price{color: red;font-size: 25px;}
-.btn {display:flex;justify-content: center;align-items: center;cursor: pointer;}
-.checked {color: orange;}
-.available {color: #BDDC62;}
-.unactive{opacity: .5;}
+.price {
+  color: red;
+  font-size: 25px;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.checked {
+  color: orange;
+}
+.available {
+  color: #bddc62;
+}
+.unactive {
+  opacity: 0.5;
+}
 
-@media(max-width:1500px){
-  .booking-item{
+@media (max-width: 1500px) {
+  .booking-item {
     flex-direction: column;
     min-height: 400px;
     margin-bottom: 140px;
   }
-  .item-box{
+  .item-box {
     height: 250px;
     background-color: white;
     z-index: 2;
@@ -77,115 +89,115 @@
   .box-item {
     flex-direction: column;
   }
-  .item-img{
+  .item-img {
     width: 100%;
-    height: auto;
+    height: 500px;
   }
 
-  .data-select{
+  .data-select {
     min-width: 82px;
   }
-  .data-item{
+  .data-item {
     min-width: 33%;
     text-align: center;
   }
   .app-check {
     display: none;
   }
-  .data-person{
+  .data-person {
     width: 50px;
     margin: 0 auto;
   }
 }
-@media(max-width:1200px){
+@media (max-width: 1200px) {
   /* *{
     border: 1px solid gray;
   } */
-  .nav{
+  .nav {
     padding: 0 5%;
   }
-  .nav-logo{
+  .nav-logo {
     margin-left: 0px;
   }
-  .nav-signInBox{
+  .nav-signInBox {
     right: 40px;
   }
-  .app-data{
+  .app-data {
     padding: 0px;
     min-height: 600px;
     flex-direction: column;
   }
-  .data-item{
+  .data-item {
     width: 100%;
   }
-  .coupon-textBox{
+  .coupon-textBox {
     display: none;
   }
-  .app-coupon{
+  .app-coupon {
     justify-content: flex-end;
   }
-  .item-boxText{
+  .item-boxText {
     width: 100%;
   }
-  .booking-price{
+  .booking-price {
     margin-left: 100px;
   }
-  .app-box{
+  .app-box {
     width: 90%;
   }
-  .box-item{
+  .box-item {
     margin-bottom: 500px;
     text-align: center;
   }
-  .item-box{
+  .item-box {
     flex-direction: column;
     min-height: 450px;
     margin-bottom: 0px;
     text-align: center;
   }
-  .item-option{
+  .item-option {
     margin-top: 20px;
     width: 100%;
   }
-  .item-ranking{
+  .item-ranking {
     margin: 10px auto;
     justify-content: center;
   }
-  .item-p{
+  .item-p {
     margin: 10px 0;
   }
-  .booking-item{
+  .booking-item {
     min-height: 500px;
   }
-  .booking-grid{
+  .booking-grid {
     margin: 0px auto;
     display: flex;
     flex-direction: column;
   }
-  .item-inboxText--booking{
+  .item-inboxText--booking {
     flex-direction: column;
   }
-  .item-name--booking{
+  .item-name--booking {
     margin-right: 0px !important;
     font-size: 24px;
   }
   .booking-box {
-    padding:  10px 5%;
+    padding: 10px 5%;
   }
-  .booking-price{
+  .booking-price {
     margin: 25px auto;
   }
-  .app-confirmBox{
-    padding:5%;
+  .app-confirmBox {
+    padding: 5%;
   }
-  .confirmBox-grid{
+  .confirmBox-grid {
     display: flex;
     flex-direction: column;
     width: 80%;
     margin-bottom: 100px;
   }
-  .confirmBox-grid>input{
-    min-height:35px ;
+  .confirmBox-grid > input {
+    min-height: 35px;
     margin-bottom: 10px;
   }
 }

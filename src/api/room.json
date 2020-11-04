@@ -1,7 +1,7 @@
 [
     {
         "id":"0",
-        "url":"https://q-cf.bstatic.com/images/hotel/max1024x768/731/73118462.jpg",
+        "url":"https://raw.githubusercontent.com/ZTKpro/hotelmenager.herokuapp.com/master/src/assets/luxRoom.jpg",
         "name":"Luksusowy pokój",
         "dataInDay":"11",
         "dataOutDay":"14",
@@ -28,7 +28,7 @@
     },
     {
         "id": "1",
-        "url":"http://u.andersiahotel.pl/2014.andersiahotel.pl/thumb/1400x900/uploads/Comfortnawww.jpg",
+        "url":"https://raw.githubusercontent.com/ZTKpro/hotelmenager.herokuapp.com/master/src/assets/mistRoom.jpg",
         "name":"Mistyczny pokój",
         "dataInDay":"11",
         "dataOutDay":"14",
@@ -55,7 +55,7 @@
     },
     {
         "id": "2",
-        "url":"https://q-cf.bstatic.com/images/hotel/max1024x768/112/112782897.jpg",
+        "url":"https://raw.githubusercontent.com/ZTKpro/hotelmenager.herokuapp.com/master/src/assets/classicRoom.jpg",
         "name":"Klasyczny pokój",
         "dataInDay":"11",
         "dataOutDay":"14",
